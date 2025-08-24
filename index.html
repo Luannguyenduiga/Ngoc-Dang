@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gửi Thư</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .bg-img {
+            background: url('https://img.freepik.com/premium-vector/cute-pink-background-with-white-clouds-top-raspberries_535126-808.jpg') no-repeat center center;
+            background-size: 100% 100%;
+        }
+
+        
+    </style>
+</head>
+<body class="bg-img">
+
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card shadow p-4 w-100" style="max-width: 600px; background: rgba(255, 255, 255, 0.2);">
+        <h2 class="text-center mb-4">Gửi Thư</h2>
+        <form action="" method="post">
+            <div class="mb-3">
+                <label for="name" class="form-label">From</label>
+                <b> Nguyễn Luân</b>
+            </div>
+            <div class="mb-3">
+                <label for="class" class="form-label">To</label>
+                <b> Đặng Ngọc </b>
+            </div>
+            <div class="mb-3">
+                <p>Message: </p>
+                Hí ẽm nhó, nay mới dám nói cho nghe. Chắc là sau mấy ngày anh cũng có tình cảm 
+                dới em, mà anh hõng dám nói. Giờ cũng ngại nữa mà mấy nay thể hiện tình cảm dới ẽm 
+                mà không nói thì hõng đc. Anh biết ẽm cũng có tình cảm dới anh. Nên anh mớii dám nói. 
+                nên là nói nài nè. Hông ấy ẽm làm người eoooooooooooooo anh nhó. Chời má ngại qué. 
+                Nhưng mà đọc hoiiiii chiều mai hãy trả lời cho anh. Hẹ hẹ hẹ ❤️ 
+            </div>
+            
+        </form>
+
+
+        <!-- ...phần đầu giữ nguyên... -->
+<audio id="myAudio" src="Đến Đây Bên Anh.mp3" autoplay></audio>
+<script>
+window.onload = function() {
+    // Tự động phát nhạc khi trang vừa load
+    var audio = document.getElementById('myAudio');
+    // Một số trình duyệt cần thao tác người dùng, nhưng nếu vừa chuyển trang từ nút bấm thì sẽ phát được
+    audio.play().catch(function(e){
+        // Nếu bị chặn, có thể thông báo hoặc xử lý ở đây
+        console.log("Trình duyệt chặn tự động phát nhạc.");
+    });
+};
+</script>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
